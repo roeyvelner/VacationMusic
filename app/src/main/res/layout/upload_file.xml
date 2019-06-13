@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:background="@drawable/bg"
+    tools:context="arieluniversity.vicationmusic.MainActivity">
+
+    <TextView
+        android:textColor="@color/Coral"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="העלאת הקבצים"
+        android:layout_gravity="center_horizontal"
+        android:textSize="40dp"
+
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:textColor="@color/Coral"
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="נא הכנס שם מקדיש למי מקדישים ושם השיר"
+            />
+        <View
+            android:layout_width="20dp"
+            android:layout_height="match_parent"></View>
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:id="@+id/from"
+                android:textColor="@color/Coral"
+                android:textColorHint="@color/Coral"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:textSize="11sp"
+
+                android:hint="שם מקדיש"
+                />
+            <EditText
+                android:id="@+id/to"
+                android:textColor="@color/Coral"
+                android:textColorHint="@color/Coral"
+                android:layout_width="match_parent"
+                android:hint="למי מוקדש"
+                android:textSize="11sp"
+                android:layout_height="33dp" />
+            <EditText
+                android:id="@+id/number"
+                android:textColor="@color/Coral"
+                android:textColorHint="@color/Coral"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:textSize="11sp"
+                android:hint="שם השיר"
+                android:text=""
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        >
+
+
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="לחץ כאן לחיצה ממושכת להקלטת הקדשה"
+        android:textColor="@color/Coral"
+        />
+        <View
+            android:layout_width="15dp"
+            android:layout_height="match_parent" />
+    <Button
+        android:id="@+id/btn_recoed"
+        android:text="הקלטה"
+        android:layout_width="100dp"
+        android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/playrecordBtn"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="לשמיעת ההקלטה"
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        >
+
+
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textColor="@color/Coral"
+            android:text="לחץ כאן לבחירת השיר המאוחסן במכשיר"
+            />
+        <View
+            android:layout_width="15dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/btn_file"
+            android:text="בחירת קובץ"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"></View>
+    <Button
+        android:id="@+id/playFileBtn"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="לשמיעת הקובץ"
+        android:visibility="invisible"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="שמירת הקדשה ושיר"
+        android:layout_gravity="center_horizontal"
+        />
+
+</android.widget.LinearLayout>

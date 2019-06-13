@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "357052509101",
+    "firebase_url": "https://vicationmusic.firebaseio.com",
+    "project_id": "vicationmusic",
+    "storage_bucket": "vicationmusic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357052509101:android:a5bf24f7266481f0",
+        "android_client_info": {
+          "package_name": "arieluniversity.vicationmusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357052509101-tk87bgnu5rrakjram182r222qgvr7i1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBDjz49wog9WeZfxFnrNQRHpltbqncqC4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

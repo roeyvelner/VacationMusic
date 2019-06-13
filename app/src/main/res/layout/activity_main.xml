@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="arieluniversity.vicationmusic.MainActivity"
+    tools:layout_editor_absoluteY="0dp"
+    android:background="@drawable/bg"
+    tools:layout_editor_absoluteX="0dp">
+
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="right"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:hint="הכנס את המייל שלך"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:id="@+id/loginLogout"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="התחברות"
+            android:onClick="login"
+            android:layout_alignLeft="@+id/user_name"
+             />
+        <TextView
+            android:id="@+id/hellotext"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:textSize="20dp"
+
+            android:textColor="@color/Coral"
+            android:layout_marginTop="13dp"
+            android:layout_below="@+id/user_name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:id="@+id/uploadSongsBtn"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:textSize="10sp"
+            android:text="העלאת שירים"
+            android:onClick="UploadBtn"
+
+            android:layout_alignStart="@+id/backward"
+            android:layout_alignTop="@+id/hellotext"
+            android:layout_marginTop="100dp"
+            android:layout_alignLeft="@+id/backward"
+
+            />
+        <Button
+            android:id="@+id/pickSongBtn"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:textSize="10sp"
+            android:text="בחירת שיר מרשימה"
+            android:onClick="pickSong"
+            android:layout_alignTop="@+id/circularImageView"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="1dp"
+            android:layout_alignRight="@+id/backward"
+            />
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:src="@drawable/music"
+            android:layout_marginTop="63dp"
+            android:layout_below="@+id/user_name"
+            android:layout_centerHorizontal="true"
+            app:civ_border_color="#808080"
+            android:id="@+id/circularImageView" />
+        <Button
+            android:id="@+id/play"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/play"
+            android:onClick="playClick"
+            android:layout_alignTop="@+id/circularImageView"
+            android:layout_marginTop="280dp"
+            android:layout_marginRight="200dp"
+            android:layout_alignRight="@+id/forward"/>
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/pause"
+            android:onClick="pauseClick"
+            android:visibility="invisible"
+            android:layout_alignTop="@+id/circularImageView"
+            android:layout_marginTop="280dp"
+            android:layout_marginRight="200dp"
+            android:layout_alignRight="@+id/forward"/>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/stop"
+            android:onClick="stopClick"
+            android:id="@+id/stop"
+            android:layout_alignTop="@+id/circularImageView"
+            android:layout_marginTop="280dp"
+            android:layout_marginRight="100dp"
+            android:layout_alignRight="@+id/forward"/>
+        <Button
+            android:id="@+id/forward"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/forward"
+            android:onClick="forwardClick"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/circularImageView"
+            android:layout_marginTop="280dp"
+            />
+        <Button
+            android:id="@+id/backward"
+            android:onClick="backwardOnclick"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/backward"
+            android:layout_alignTop="@+id/circularImageView"
+            android:layout_marginTop="280dp"
+            android:layout_marginRight="300dp"
+            android:layout_alignRight="@+id/forward"
+            />
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_below="@+id/play"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="18dp" />
+        <TextView
+            android:id="@+id/timeStart"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="00:00"
+            android:textColor="@color/Coral"
+            android:layout_alignTop="@+id/seekbar"
+            android:layout_marginTop="55dp"
+            android:layout_alignParentRight="true"
+
+             />
+        <TextView
+            android:id="@+id/timeEnd"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:text="00:00"
+            android:textColor="@color/Coral"
+            android:gravity="right"
+            android:layout_alignTop="@+id/seekbar"
+            android:layout_marginTop="55dp"
+            android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/nameOfSong"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text=""
+        android:textColor="@color/Coral"
+        android:gravity="right"
+        android:layout_alignTop="@+id/seekbar"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentLeft="true"/>
+
+</RelativeLayout>
+
